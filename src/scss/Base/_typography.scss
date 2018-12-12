@@ -13,6 +13,10 @@ html {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+body {
+  text-align: center;
+}
 /* Copy & Lists */
 p {
   @include remsize(line-height, 24px);
