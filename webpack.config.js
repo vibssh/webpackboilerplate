@@ -1,4 +1,5 @@
 // webpack v4
+const {resolve} = require('path');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
@@ -11,6 +12,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js'
+  },
+  stats: {
+    children: false,
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -50,7 +54,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/index.html',
+      template: resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html'
     }),
     new WebpackMd5Hash(),

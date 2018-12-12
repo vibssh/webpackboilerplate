@@ -1,3 +1,5 @@
 node_modules/
 package-lock.json
 yarn.lock
+src/.DS_Store
+src/._.DS_Store

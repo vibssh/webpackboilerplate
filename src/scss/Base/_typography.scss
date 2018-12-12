@@ -1,0 +1,104 @@
+/**
+ - Base styles for Typography
+*/
+
+/* Import fonts */
+@import 'fonts';
+
+/* BASE STYLES */
+
+html {
+  /* Change default typefaces here */
+  font-family: $primary-font;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+/* Copy & Lists */
+p {
+  @include remsize(line-height, 24px);
+  @include remsize(margin-top, 24px);
+  margin-bottom: 0;
+}
+ul,
+ol {
+  @include remsize(margin-top, 24px);
+  @include remsize(margin-bottom, 24px);
+}
+ul li,
+ol li {
+  @include remsize(line-height, 24px);
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  @include remsize(line-height, 24px);
+  @include remsize(margin-top, 24px);
+  @include remsize(margin-bottom, 24px);
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: $primary-font;
+  @include remsize(margin-top, 24px);
+  margin-bottom: 0;
+  @include remsize(line-height, 24px);
+  font-weight: normal;
+}
+h1 {
+  @include remsize(font-size, 68px);
+  @include remsize(line-height, 64px);
+  @include remsize(margin-top, 48px);
+  font-weight: $bold-weight;
+}
+h2 {
+  @include remsize(font-size, 45px);
+  @include remsize(line-height, 48px);
+  @include remsize(margin-top, 48px);
+  font-weight: $bold-weight;
+}
+h3 {
+  @include remsize(font-size, 23px);
+}
+h4 {
+  @include remsize(font-size, 11px);
+}
+h5 {
+  @include remsize(font-size, 8px);
+}
+h6 {
+  @include remsize(font-size, 6px);
+  font-size: 0.3535rem;
+}
+/* Tables */
+table {
+  @include remsize(margin-top, 24px);
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  @include remsize(line-height, 33px);
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  @include remsize(font-size, 23px);
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}
