@@ -1,0 +1,32 @@
+.jf-u-hide {
+  display: none;
+}
+
+.jf-u-display-inline {
+  display: inline-block;
+}
+
+.jf-u-display-block {
+  display: block;
+}
+
+.jf-u-display-grid {
+  display: grid;
+}
+
+$min: 0;
+$max: 100;
+@for $i from $min through $max {
+  .jf-u-padding_top-#{$i} { padding-top: $i }
+  .jf-u-padding_right-#{$i} { padding-right: $i }
+  .jf-u-padding_bottom-#{$i} { padding-bottom: $i }
+  .jf-u-padding_left-#{$i} { padding-left: $i }
+  .jf-u-margin_top-#{$i} { margin-top: $i }
+  .jf-u-margin_right-#{$i} { margin-right: $i }
+  .jf-u-margin_bottom-#{$i} { margin-bottom: $i }
+  .jf-u-margin_left-#{$i} { margin-left: $i }
+}
+
+.jf-u-centre-text {
+  text-align: center;
+}
