@@ -1,23 +1,32 @@
-/*
-Component : Button
-block Class : .jf-c-button
-element class: .jf-c-button__text
-modifier class: .jf-c-button--accent
+// Buttons
+//
+// A majorities of buttons in the site are built from the same base class.
+//
+// Markup:
+// <a href="#" class="button {{modifier_class}}">Link Button</a>
+// <button class="button {{modifier_class}}">Button Element</button>
+// <input type="button" class="button {{modifier_class}}" value="input[type='button']"/>
+//
+// .button--primary   - Use this class to indicate that the button is the primary
+//              feature of this form.
+// :hover     - Highlight the button when hovered.
+//
+// Styleguide components.buttons 
 
-markup :
-<button class="jf-c-button jf-c-button--accent">
-<span class="jf-c-button__text">Button Text</span>
-</button>
-*/
-
-.jf-c-button {
-
-}
-
-.jf-c-button--modifier {
-
-}
-
-.jf-c-button__element {
+.button {
+  display: inline-block;
+  padding: 2em;
+  text-align: center;
+  color: #000;
+  background: #ccc;
   
+  &:hover {
+    background: #ccc;
+    color: 000;
+  }
+}
+
+.button--primary {
+  background: purple;
+  color: white;
 }

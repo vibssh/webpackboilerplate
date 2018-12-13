@@ -2,10 +2,18 @@
 const {resolve} = require('path');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
+const HandlebarsPlugin = require('precompile-handlebars');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const KssWebpackPlugin = require('kss-webpack-plugin');
+const KssConfig = {
+  title: 'JF Styleguide',
+  source: './src/scss/',
+  destination:'./src/styleguide/',
+  css: '../../style.css',
+  builder:'./node_modules/michelangelo/kss_styleguide/custom-template/',
+}
 
 module.exports = {
   entry: { main: './src/js/index.js' },
@@ -18,7 +26,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: './src',
     open: true,
     disableHostCheck: true,
     host: '0.0.0.0',
@@ -38,7 +46,8 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          //MiniCssExtractPlugin.loader,
+          'css-hot-loader',
+           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
           'sass-loader'
@@ -46,22 +55,30 @@ module.exports = {
       }
     ]
   },
+
+  //Define all Webpack Plugins here
   plugins: [
     new CleanWebpackPlugin('dist', {}),
-    // new MiniCssExtractPlugin({
-    //   filename: 'style.[contenthash].css'
-    // }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
       template: resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html'
     }),
-    new WebpackMd5Hash(),
     new StyleLintPlugin({
       configFile: './stylelint.config.js',
       files: './src/scss/*.scss',
       syntax: 'scss'
-    })
+    }),
+    new KssWebpackPlugin(KssConfig),
+    new HandlebarsPlugin([
+      {
+          inputDir: "./node_modules/michelangelo/kss-styleguide/custom-template/",
+          outputFile: "./node_modules/michelangelo/kss-styleguide/custom-template/builder.js"
+      }
+    ])
   ]
 };

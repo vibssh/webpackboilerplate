@@ -1,19 +1,4 @@
 /* All imports - This is the main file */
 
-//Base
-@import './Base/index';
-
-//Objects
-@import './Objects/index';
-
 //Components
-@import './Components/index';
-
-//States
-@import './State/index';
-
-//Themes
-@import './Themes/theme';
-
-//Utilities
-@import './Utilites/index';
+@import './Components/index'; 
