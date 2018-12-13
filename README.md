@@ -65,7 +65,7 @@
   * To Run the Project in Development mode and watch the files for change
     * `yarn dev`
   * To build the Project for production 
-    * `yarn prod` - [This will create a 'dist' folder deploy that to the production environment when you are ready]
+    * `yarn build` - [This will create a 'dist' folder deploy that to the production environment when you are ready]
 
 * Living Styleguide
   * Living styleguide uses kss-3.0 to generate styles as you compile your sass files
@@ -91,4 +91,4 @@
   * Custom Theme ['michelangelo'] is installed inside node_modules folder and that is used to serve the styleguide template
   * Any structure change that needs to be done to the Styleguide template it needs to be done here 
     `./node_modules/michelangelo/kss-styleguide/custom-template/index.hbs` It uses handlebars templating engine.
-  * To reflect the changes done to the structure and or styling of the styleguide template please run this command `kss --source ./src/scss/ --destination ./src/styleguide --css ./style.css  --builder ./node_modules/michelangelo/kss_styleguide/custom-template`
+  * To reflect the changes done to the structure and or styling of the styleguide template please run this command `yarn styleguide && yarn dev`

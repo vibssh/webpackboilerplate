@@ -1,3 +1,5 @@
+# Do not ignore the below folder as this is styleguide layout
+!node_modules/michelangelo
 node_modules/
 package-lock.json
 yarn.lock

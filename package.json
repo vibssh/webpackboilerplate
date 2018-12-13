@@ -6,8 +6,9 @@
   "author": "Vaibhav Shringarpure <vaibhav.shringarpure@jellyfish.co.uk>",
   "license": "MIT",
   "scripts": {
-    "prod": "NODE_ENV=production webpack --mode=production",
-    "dev": "NODE_ENV=development webpack-dev-server --mode=development --hot --host 0.0.0.0"
+    "build": "rimraf dist && NODE_ENV=production webpack --mode=production --config ./webpack.config.production.js",
+    "dev": "NODE_ENV=development webpack-dev-server --mode=development --config ./webpack.config.development.js --hot --host 0.0.0.0",
+    "styleguide": "rimraf ./src/styleguide && kss --source ./src/scss/ --destination ./src/styleguide --css ./style.css  --builder ./node_modules/michelangelo/kss_styleguide/custom-template"
   },
   "dependencies": {
     "autoprefixer": "^8.6.3",
@@ -15,6 +16,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
     "css-hot-loader": "^1.4.3",
     "css-loader": "^2.0.0",
     "eslint": "^5.0.0",
