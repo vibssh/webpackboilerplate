@@ -13,7 +13,7 @@ const KssConfig = {
   source: './src/scss/',
   destination:'./src/styleguide/',
   css: '../../style.css',
-  builder:'./node_modules/michelangelo/kss_styleguide/custom-template/',
+  builder:'./jf_styleguide_theme/kss_styleguide/custom-template/',
 }
 
 module.exports = {
