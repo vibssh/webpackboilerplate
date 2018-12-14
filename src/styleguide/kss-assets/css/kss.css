@@ -159,7 +159,7 @@
     transform: translateX(6px); }
   .kss-nav__item a.kss-state-active {
     background: black;
-    color: green; }
+    color: purple; }
   .kss-nav__item a.kss-state-active:hover .kss-nav__name {
     transform: none; }
 

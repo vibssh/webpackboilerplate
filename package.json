@@ -8,8 +8,8 @@
   "scripts": {
     "build": "rimraf dist && NODE_ENV=production webpack --mode=production --config ./webpack.config.production.js",
     "dev": "NODE_ENV=development webpack-dev-server --mode=development --config ./webpack.config.development.js --hot --host 0.0.0.0",
-    "styleguide": "onchange './jf_styleguide_theme/kss_styleguide/custom-template/kss-assets/css/**/*.scss' -- npm run styleguideBuild",    
-    "styleguideBuild": "kss --source ./src/scss/ --destination ./src/styleguide --css ../../style.css  --builder ./jf_styleguide_theme/kss_styleguide/custom-template"
+    "styleguide": "onchange './jf_styleguide_theme/kss_styleguide/custom-template/kss-assets/css/**/*.scss' -- npm run styleguideBuild",
+    "styleguideBuild": "kss --source ./src/scss/ --destination ./src/styleguide --css ../../style.css --builder ./jf_styleguide_theme/kss_styleguide/custom-template --config ./kss-config.json"
   },
   "dependencies": {
     "autoprefixer": "^8.6.3",

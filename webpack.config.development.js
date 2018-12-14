@@ -8,7 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
 const KssConfig = {
-  title: 'JF Styleguide',
+  title: 'JF Component Library',
   source: './src/scss/',
   destination:'./src/styleguide/',
   css: '../../style.css',
@@ -76,8 +76,8 @@ module.exports = {
     new KssWebpackPlugin(KssConfig),
     new HandlebarsPlugin([
       {
-          inputDir: "./node_modules/michelangelo/kss-styleguide/custom-template/",
-          outputFile: "./node_modules/michelangelo/kss-styleguide/custom-template/builder.js"
+          inputDir: "./jf_styleguide_theme/kss-styleguide/custom-template/",
+          outputFile: "./jf_styleguide_theme/kss-styleguide/custom-template/builder.js"
       }
     ])
   ]

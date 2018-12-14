@@ -1,0 +1,7 @@
+{
+  "title": "JF Component Library",
+  "source": "./src/scss/",
+  "destination":"./src/styleguide/",
+  "css": "../../style.css",
+  "builder":"./jf_styleguide_theme/kss_styleguide/custom-template/"
+}
