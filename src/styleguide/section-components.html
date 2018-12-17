@@ -22,7 +22,9 @@
         <a class="kss-header__hamburger-trigger">
           <div class="kss-header__hamburger"></div>
         </a>
-        <h1 class="kss-header__title kss-title">JF Component Library</h1>
+        <h1 class="kss-header__title kss-title">
+          <img src="kss-assets/img/jellyfish-logo.png" class="kss-navigation__logo" alt="JF Component Library">
+        </h1>
       </section>
     </header>
     <!-- /header. -->
@@ -31,7 +33,9 @@
     <!-- navigation. -->
     <section class="kss-navigation">
       <h1 class="kss-navigation__title kss-title">
-        <a href="../../index.html">JF Component Library</a>
+        <a href="../../index.html">
+          <img src="kss-assets/img/jellyfish-logo.png" class="kss-navigation__logo" alt="JF Component Library">
+        </a>
       </h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
@@ -52,13 +56,13 @@
                         <span class="kss-nav__name">Buttons</span>
                       </a>
                     </li>
-                    <li class="kss-nav__item ">
-                      <a href="section-components.html#kssref-components-paragraph">
-                        <span class="kss-nav__ref">1.2</span>
-                        <span class="kss-nav__name">Paragraph</span>
-                      </a>
-                    </li>
                 </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
           </li>
       </ul>
     </section>
@@ -111,9 +115,9 @@
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><a href="#" class="button [modifier class]">Link Button</a>
-<button class="button [modifier class]">Button Element</button>
-<input type="button" class="button [modifier class]" value="input[type='button']"/></div>
+                <div class="kss-modifiers__example"><a href="#" class="button {{modifier_class}}">Link Button</a>
+<button class="button {{modifier_class}}">Button Element</button>
+<input type="button" class="button {{modifier_class}}" value="input[type='button']"/></div>
 
                   <article class="kss-modifiers__modifier">
                     <h2 class="kss-modifiers__name">.button--primary</h2>
@@ -132,48 +136,9 @@
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button [modifier class]&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class&#x3D;&quot;button [modifier class]&quot;&gt;Button Element&lt;/button&gt;
-&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;button [modifier class]&quot; value&#x3D;&quot;input[type&#x3D;&#x27;button&#x27;]&quot;/&gt;</code></pre>
-                </article>
-
-            </section>
-            <section class="kss-section kss-section--depth-2" id="kssref-components-paragraph">
-
-            <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>Base/_typography.scss</span>, line <span>110</span></p>
-
-              <a class="kss-section__permalink" href="#kssref-components-paragraph">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">1.2</span>
-                  <span class="kss-section__name">Paragraph</span>
-                </h2>
-              </a>
-
-                <div class="kss-section__description"><p>A majorities of buttons in the site are built from the same base class.</p>
-</div>
-
-            </article>
-
-              <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Examples</h1>
-
-                  <h2 class="kss-modifiers__name">Default styling</h2>
-
-                <div class="kss-modifiers__example"><p>This is a paragraph
-<p class="lead">This is a lead paragraph </button></div>
-
-                  <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">.paragraph--lead</h2>
-                    <p class="kss-modifiers__description">Use this class to emphasis paragraph</p>
-                    <div class="kss-modifiers__example"><p>This is a paragraph
-<p class="lead">This is a lead paragraph </button></div>
-                  </article>
-              </article>
-
-                <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;p&gt;This is a paragraph
-&lt;p class&#x3D;&quot;lead&quot;&gt;This is a lead paragraph &lt;/button&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;button {{modifier_class}}&quot;&gt;Link Button&lt;/a&gt;
+&lt;button class&#x3D;&quot;button {{modifier_class}}&quot;&gt;Button Element&lt;/button&gt;
+&lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;button {{modifier_class}}&quot; value&#x3D;&quot;input[type&#x3D;&#x27;button&#x27;]&quot;/&gt;</code></pre>
                 </article>
 
             </section>

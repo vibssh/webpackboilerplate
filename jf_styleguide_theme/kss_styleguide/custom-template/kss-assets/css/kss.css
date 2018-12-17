@@ -118,6 +118,13 @@
   .kss-navigation.kss-state-active {
     transform: none; }
 
+.kss-navigation__logo {
+  max-width: 100%;
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 .kss-navigation__title {
   display: none;
   box-sizing: border-box;
@@ -159,7 +166,7 @@
     transform: translateX(6px); }
   .kss-nav__item a.kss-state-active {
     background: black;
-    color: purple; }
+    color: green; }
   .kss-nav__item a.kss-state-active:hover .kss-nav__name {
     transform: none; }
 

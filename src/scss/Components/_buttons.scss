@@ -2,16 +2,13 @@
 //
 // A majorities of buttons in the site are built from the same base class.
 //
-// Markup:
-// <a href="#" class="button {{modifier_class}}">Link Button</a>
-// <button class="button {{modifier_class}}">Button Element</button>
-// <input type="button" class="button {{modifier_class}}" value="input[type='button']"/>
+// Markup: buttons.hbs
 //
 // .button--primary   - Use this class to indicate that the button is the primary
 //              feature of this form.
 // :hover     - Highlight the button when hovered.
 //
-// Styleguide components.buttons 
+// Style guide:  components.buttons 
 
 .button {
   display: inline-block;
@@ -19,11 +16,12 @@
   text-align: center;
   color: #000;
   background: #ccc;
+  transition: all .2s linear;
   
   &:hover {
-    background: #ccc;
-    color: 000;
-  }
+    background: #000;
+    color: #fff;
+  } 
 }
 
 .button--primary {

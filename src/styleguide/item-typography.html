@@ -51,10 +51,18 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-typography.html">
+            <a class="kss-state-active" href="section-typography.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Typography</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-typography.html#kssref-typography-paragraph">
+                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__name">Paragrah</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
       </ul>
     </section>
@@ -63,13 +71,28 @@
 
     <!-- documentation. -->
     <section class="kss-documentation">
-        <article class="kss-markdown">
-          <h1>Welcome to Jellyfish Component Library</h1>
-<ul>
-<li>This is a first stab at living styleguide</li>
-</ul>
 
-        </article>
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-typography">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-typography">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Typography</span>
+                </h1>
+              </a>
+
+
+            </article>
+
+
+            </header>
     </section>
     <!-- /documentation. -->
 

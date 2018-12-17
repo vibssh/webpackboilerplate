@@ -107,14 +107,24 @@ code {
   margin-top: 0;
 }
 
-// Paragraph
+
+// Paragrah 
 //
 // A majorities of buttons in the site are built from the same base class.
 //
-// Markup:
-// <p>This is a paragraph
-// <p class="lead">This is a lead paragraph </button>
+// Markup: paragraph.hbs
 //
-// .paragraph--lead   - Use this class to emphasis paragraph
+// .paragraph--lead   - Use this class to indicate that the button is the primary
+//              feature of this form.
 //
-// Styleguide components.paragraph 
+// Style guide:  Typography.paragraph 
+
+.paragraph {
+  font-size: 20px;
+  color: #000;
+
+  &.paragraph--lead {
+    font-size: 40px;
+    color: green;
+  }
+}

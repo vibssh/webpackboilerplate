@@ -32,6 +32,14 @@ $kss-nav-item-link-active: $cowabunga;
   &.kss-state-active { transform: none; }
 }
 
+.kss-navigation__logo {
+  max-width: 100%;
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;  
+}
+
 .kss-navigation__title {
   display: none;
   box-sizing: border-box;
@@ -65,7 +73,7 @@ $kss-nav-item-link-active: $cowabunga;
   font-weight: 400;
   text-decoration: none; 
   text-transform: none;
-  letter-spacing: normal; 
+  letter-spacing: normal;
   transition: color 0.3s;  
 
   &:hover { color: $kss-nav-item-link-active; }
@@ -75,7 +83,7 @@ $kss-nav-item-link-active: $cowabunga;
   &.kss-state-active { 
     //background: $navigationActive;
     background: black; 
-    color: purple;  
+    color: green;  
   }  
 
   &.kss-state-active:hover .kss-nav__name { transform: none; }
