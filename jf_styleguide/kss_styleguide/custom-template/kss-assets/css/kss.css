@@ -3,6 +3,10 @@
   padding: 0;
   background: #FFFFFF; }
 
+.kss-modifiers__modifier {
+  padding: 15px 0;
+  border-bottom: 1px solid #F1C40F; }
+
 .kss-title {
   margin: 0;
   color: #E87E04;
@@ -93,12 +97,11 @@
   top: 0;
   left: 0;
   display: block;
-  box-shadow: -10px 0 10px 10px rgba(34, 34, 34, 0.5);
   box-sizing: border-box;
-  width: 85%;
+  width: 65%;
   height: 100%;
   color: #222222;
-  background: #FFFFFF;
+  background: #efefef;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   transform: translateX(-100%);
@@ -448,6 +451,7 @@
   margin: 0;
   margin-bottom: 5px;
   font-size: 1.25rem;
+  padding-bottom: 10px;
   font-weight: 600;
   color: #3498DB; }
   .kss-modifiers__name em {
@@ -455,7 +459,11 @@
     color: #E87E04; }
 
 .kss-modifiers__description {
-  margin: 0; }
+  margin: 0;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #333; }
 
 .kss-modifiers__example {
   position: relative;

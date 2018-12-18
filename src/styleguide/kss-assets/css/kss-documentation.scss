@@ -1,6 +1,7 @@
 $kss-section-item-color: $cowabunga;
 $kss-modifiers-heading-color: $cowabunga;
 $kss-modifiers-name-color: $blue;
+$kss-modifiers-description-color: $sunset;
 
 
 .kss-documentation {
@@ -191,6 +192,7 @@ $kss-modifiers-name-color: $blue;
   margin: 0;
   margin-bottom: 5px;
   font-size: rem(20px);
+  padding-bottom: 10px;
   font-weight: 600;
   color: $kss-modifiers-name-color;
 
@@ -200,7 +202,13 @@ $kss-modifiers-name-color: $blue;
   }
 }
 
-.kss-modifiers__description { margin: 0; }
+.kss-modifiers__description { 
+  margin: 0;
+  font-size: rem(18px);
+  font-style: italic;
+  font-weight: 600;
+  color: #333;
+}
 
 .kss-modifiers__example {
   position: relative;
