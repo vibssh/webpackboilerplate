@@ -1,6 +1,6 @@
 $kss-section-item-color: $cowabunga;
 $kss-modifiers-heading-color: $cowabunga;
-$kss-modifiers-name-color: $cowabunga;
+$kss-modifiers-name-color: $blue;
 
 
 .kss-documentation {
@@ -190,9 +190,14 @@ $kss-modifiers-name-color: $cowabunga;
 .kss-modifiers__name {
   margin: 0;
   margin-bottom: 5px;
-  font-size: rem(16px);
-  font-weight: 400;
+  font-size: rem(20px);
+  font-weight: 600;
   color: $kss-modifiers-name-color;
+
+  em {
+    font-size: rem(16px);
+    color: $kss-modifiers-heading-color;
+  }
 }
 
 .kss-modifiers__description { margin: 0; }

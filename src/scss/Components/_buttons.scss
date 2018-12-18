@@ -1,30 +1,45 @@
-// Buttons
+// Buttons (title, same as before)
 //
-// A majorities of buttons in the site are built from the same base class.
+// Markup: 
+// Link Button
+// <button class="button {{modifier_class}}">Button Element</button>
+// <input class="button {{modifier_class}}" type="button" value="Input Button" />
+// 
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .button--small - A small button. 
+// .button--large - A large button.
 //
-// Markup: buttons.hbs
-//
-// .button--primary   - Use this class to indicate that the button is the primary
-//              feature of this form.
-// :hover     - Highlight the button when hovered.
-//
-// Style guide:  components.buttons 
+// Styleguide Components.button
 
 .button {
+  padding: 1em 2em;
+  margin: .5em;
   display: inline-block;
-  padding: 2em;
-  text-align: center;
-  color: #000;
-  background: #ccc;
-  transition: all .2s linear;
-  
-  &:hover {
-    background: #000;
-    color: #fff;
-  } 
+  font-size: .9em;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f56476;
+  background-color: #fff;
+  border: 2px solid #f56476;
+  transition: .2s color, .2s background-color, .2s border-color;
 }
 
-.button--primary {
-  background: purple;
-  color: white;
+.button:hover {
+  color: #fff;
+  background-color: #f56476;
+}
+
+.button:focus {
+  color: #3ddc97;
+  border-color: currentColor;
+}
+
+.button--small {
+  font-size: .5em;
+}
+
+.button--large {
+  font-size: 1.5em;
 }

@@ -7,19 +7,27 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
-const KssConfig = {
-  title: 'JF Component Library',
-  source: './src/scss/',
-  destination:'./src/styleguide/',
-  css: '../../style.css',
-  builder:'./jf_styleguide_theme/kss_styleguide/custom-template/',
+
+const KssConfig = {  
+  "title"        : "Jf Styleguide",
+  "placeholder"  : "[default]", 
+
+  "builder"      : "./jf_styleguide_theme/kss_styleguide/custom-template/",
+  "source"       : "./src/scss",
+  "destination"  : "./src/styleguide/",  
+
+  "homepage"     : "./src/scss/homepage.md",
+
+
+  "css": "style.css",
+  "js" : "main.js"  
 }
 
 module.exports = {
   entry: { main: './src/js/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].js'
   },
   stats: {
     children: false,

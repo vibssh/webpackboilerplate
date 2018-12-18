@@ -55,7 +55,7 @@ class KssBuilderHandlebars extends KssBuilderBaseHandlebars {
         string: true,
         multiple: false,
         describe: 'Title of the style guide',
-        default: 'Jelly Fish'
+        default: 'KSS Style Guide'
       }
     });
   }

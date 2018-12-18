@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.--primary {
+    background: green;
+  }
+
+  &.--secondary {
+    background: brown;
+  }
+}
+
+.card__title {
+  color:orange;
+}
+.card--primary {
+  color: green;
+}
+
+.card-item {
+	display: flex; 
+  padding: 0.5em;
+	width: 100%;
+}
+@media all and (min-width: 40em) {
+  .card-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .card-item {
+    width: 33.33%;
+  }
+}
+.card-content {
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+	width: 100%;
+}
+.card-content p {
+	flex: 1 0 auto;
+}

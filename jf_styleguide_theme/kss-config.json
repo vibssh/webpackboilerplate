@@ -1,17 +1,16 @@
 {
-  "title"        : "Michelangelo Styleguide",
-  "mask"         : "*.scss",
-  "placeholder"  : "[modifier]",
+  "title"        : "Jf Styleguide",
+  "placeholder"  : "default",
 
 "//": "relative to this file.",
   "builder"      : "kss_styleguide/custom-template/",
-  "source"       : "src/",
-  "destination"  : "kss_styleguide/styleguide/",
+  "source"       : "../src/scss/",
+  "destination"  : "../src/styleguide/",
 
 "//": "relative to source.",
-  "homepage"     : "../kss_styleguide/kss-homepage.md",
+  "homepage"     : "..src/scss/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
-  "css": [],
-  "js" : []
+  "css": "../../style.css",
+  "js" : "../../main.js"
 }

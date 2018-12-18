@@ -21,9 +21,7 @@
         <a class="kss-header__hamburger-trigger">
           <div class="kss-header__hamburger"></div>
         </a>
-        <h1 class="kss-header__title kss-title">
-          <img src="kss-assets/img/jellyfish-logo.png" class="kss-navigation__logo" alt="{{options.title}}">
-        </h1>
+        <h1 class="kss-header__title kss-title">{{options.title}}</h1>
       </section>
     </header>
     <!-- /header. -->
@@ -31,11 +29,7 @@
 
     <!-- navigation. -->
     <section class="kss-navigation">
-      <h1 class="kss-navigation__title kss-title">
-        <a href="../../index.html">
-          <img src="kss-assets/img/jellyfish-logo.png" class="kss-navigation__logo" alt="{{options.title}}">
-        </a>
-      </h1>
+      <h1 class="kss-navigation__title kss-title">{{options.title}}</h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
           <a href="index.html">
@@ -136,7 +130,7 @@
 
                 {{#each modifiers}}
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">{{name}}</h2>
+                    <h2 class="kss-modifiers__name">{{name}} <em>[Modifier]</em></h2>
                     <p class="kss-modifiers__description">{{{description}}}</p>
                     <div class="kss-modifiers__example">{{{markup}}}</div>
                   </article>
